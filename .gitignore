@@ -1,0 +1,35 @@
+bundle.js
+.bundle.js
+Dockerfile
+# beneath is crap that should go in your global gitignore.
+npm-debug.log
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+*.idea
+*.pem
+*.crt
+*.pfx
+
+pids/**
+logs/**
+results/**
+build/**
+dump/**
+dist/**
+
+.sass-cache/**
+lib-cov/**
+node_modules/**
+
+#OS X specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
