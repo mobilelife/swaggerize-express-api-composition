@@ -73,4 +73,4 @@ app.use(swaggerize({
 - api decomposition example of [petstore](./test/swagger/petstore)
 
 #### License 
-[MIT License](./license.md)
+[MIT License](./LICENSE)
