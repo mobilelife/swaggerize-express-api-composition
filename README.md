@@ -71,3 +71,6 @@ app.use(swaggerize({
  look at at the testcases
 - express server example [server.js](./test/express/server.js)
 - api decomposition example of [petstore](./test/swagger/petstore)
+
+#### License 
+[MIT License](./license.md)
