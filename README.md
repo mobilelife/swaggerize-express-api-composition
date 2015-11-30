@@ -68,4 +68,6 @@ app.use(swaggerize({
  - **publicDocsApiKey** api key used to protect the public api docs.
 
 #### Code example 
- look at the test-cases, the [server.js](./test/express/server.js)
+ look at at the testcases
+- express server example [server.js](./test/express/server.js)
+- api decomposition example [swagger](./test/swagger)
