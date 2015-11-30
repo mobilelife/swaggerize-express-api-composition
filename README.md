@@ -8,4 +8,4 @@ Limited to swagger specification 2.0. The library is merely a decoration of swag
 - Exposure of a private and public API, private api the full specification, the public api a subset.
 - Possibility to include the swaggerUI on the express server 
 
-
+See the basic information about [swaggerize-express](https://raw.githubusercontent.com/krakenjs/swaggerize-express/master/README.md) 
