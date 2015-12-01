@@ -6,6 +6,11 @@
   "scripts": {
     "test": "mocha **/*.test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mobilelife/swaggerize-express-api-composition.git"
+  },
+  "bugs": "https://github.com/mobilelife/swaggerize-express-api-composition/issues",
   "author": "Mobilelife",
   "license": "MIT",
   "dependencies": {
