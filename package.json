@@ -1,6 +1,6 @@
 {
   "name": "swaggerize-express-api-composition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allow to Decompose your swagger definition into multiple swagger files",
   "main": "index.js",
   "scripts": {
