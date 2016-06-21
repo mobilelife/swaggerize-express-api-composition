@@ -1,6 +1,6 @@
 {
   "name": "swaggerize-express-api-composition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allow to Decompose your swagger definition into multiple swagger files",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "core-util-is": "1.0.2",
-    "express": "4.13.3",
+    "express": "4.14.0",
     "js-yaml": "3.4.5",
     "swaggerize-express": "4.0.5"
   },
