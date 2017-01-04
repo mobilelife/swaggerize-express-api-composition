@@ -55,7 +55,7 @@ module.exports = function (options) {
     assert.ok(is.isString(options.publicTag) || is.isUndefined(options.publicTag), "Options.handlers must be a path-string");
     assert.ok(is.isString(options.privateDocsApiKey) || is.isUndefined(options.privateDocsApiKey), "Options.privateDocsApiKey must be string or undefined");
     assert.ok(is.isString(options.publicDocsApiKey) || is.isUndefined(options.publicDocsApiKey), "Options.publicDocsApiKey must be string or undefined");
-
+    assert.ok(is.isString(options.swaggerJson) || is.isUndefined(options.swaggerJson), "Options.publicDocsApiKey must be string or undefined");
 
     var publicTag = (options.publicTag || 'public').toLowerCase();
 
@@ -106,6 +106,12 @@ module.exports = function (options) {
         res.json(apis.privateApi);
 
     });
+    
+    if (options.swaggerJson) {
+        app.get(options.swaggerJson, function (req,res) {
+            res.json(apis.privateApi);
+        });
+    }
 
     var mountPath = options.mountPath || '/';
     var swaggerizeApi = extend({},apis.privateApi);
@@ -116,6 +122,3 @@ module.exports = function (options) {
 
     return app;
 };
-
-
-
