@@ -106,10 +106,12 @@ module.exports = function (options) {
         res.json(apis.privateApi);
 
     });
-
-    app.get(options.swaggerJson, function (req,res) {
-        res.json(apis.privateApi);
-    });
+    
+    if (options.swaggerJson) {
+        app.get(options.swaggerJson, function (req,res) {
+            res.json(apis.privateApi);
+        });
+    }
 
     var mountPath = options.mountPath || '/';
     var swaggerizeApi = extend({},apis.privateApi);
